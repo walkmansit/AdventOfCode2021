@@ -15,13 +15,13 @@ class Day01Test : TestableDay {
     }
 
     @Test
-    override fun partTwoTestData() {
-        assertEquals(5,Day01(TEST_INPUT).getResultPartTwo())
+    override fun partOneRealData() {
+        assertEquals(1722,Day01(INPUT).getResultPartOne())
     }
 
     @Test
-    override fun partOneRealData() {
-        assertEquals(1722,Day01(INPUT).getResultPartOne())
+    override fun partTwoTestData() {
+        assertEquals(5,Day01(TEST_INPUT).getResultPartTwo())
     }
 
     @Test
@@ -30,19 +30,7 @@ class Day01Test : TestableDay {
     }
 
     companion object {
-        private val TEST_INPUT = """
-            199
-            200
-            208
-            210
-            200
-            207
-            240
-            269
-            260
-            263
-        """.trimIndent().lines()
-
-        val INPUT = File("src/main/resources/Day01.txt").readLines()
+        private val TEST_INPUT = File("src/test/resources/Day01ex.txt").readLines()
+        val INPUT = File("src/test/resources/Day01.txt").readLines()
     }
 }

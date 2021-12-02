@@ -1,4 +1,4 @@
-package github.walkmansit.aoc2020
+package github.walkmansit.aoc2021
 
 interface Day<out T, out K> {
 

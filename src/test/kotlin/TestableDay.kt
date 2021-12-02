@@ -2,8 +2,8 @@
 
 interface TestableDay {
     fun partOneTestData()
-    fun partTwoTestData()
-
     fun partOneRealData()
+
+    fun partTwoTestData()
     fun partTwoRealData()
 }
